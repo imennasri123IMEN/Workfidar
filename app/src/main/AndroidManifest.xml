@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pointage1">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+
+        <!-- Specific apps you interact with, eg: -->
+        <!--
+        <package android:name="com.example.store" />
+        <package android:name="com.example.service" />
+        -->
+        <!--
+             Specific intents you query for,
+             eg: for a custom share UI
+        -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="image/jpeg" />
+        </intent>
+    </queries>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/nov"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Imageslider">
+        <activity
+            android:name=".CongeListEmployeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UtilisateurDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".UtilisateursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccueilInviteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CongeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CongeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CongeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Calendrier.WeekViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Calendrier.EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Calendrier.CalendrierActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcceuilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activite.activite"
+            android:exported="true" />
+        <activity
+            android:name=".activite.adddata"
+            android:exported="true" />
+        <activity
+            android:name=".activite.activiteutil"
+            android:exported="true" />
+        <activity
+            android:name=".slide"
+            android:exported="true" />
+        <activity
+            android:name=".Splach"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <!--
+<provider
+            android:name="com.vansuita.pickimage.provider.PickImageFileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+        -->
+        <!--<provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.seip.day23b1.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="com.google.mlkit.vision.DEPENDENCIES"
+                android:value="face" />
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>-->
+
+        <!--android:authorities="com.pointage1.fileprovider"-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="com.google.mlkit.vision.DEPENDENCIES"
+                android:value="face" />
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

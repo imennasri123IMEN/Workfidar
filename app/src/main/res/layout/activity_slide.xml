@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/blogg"
+    android:layout_height="match_parent"
+    tools:context=".slide"
+    tools:ignore="MissingClass">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_slider"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"/>
+
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="500dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/facee" />
+
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="bottom"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:src="@drawable/webi" />
+
+    <Button
+
+        android:id="@+id/react"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd=  "false"
+        android:textSize="5dp"
+        android:textColorHint="@color/purple_200"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="donner votre avis"
+
+
+        android:textColor="#FFFFFF"
+        app:icon="@drawable/ic_baseline_tag_faces_24"
+        app:iconTint="@color/color2"
+        app:layout_constraintVertical_bias="0.615"
+        app:strokeColor="@color/color2" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>
+
+

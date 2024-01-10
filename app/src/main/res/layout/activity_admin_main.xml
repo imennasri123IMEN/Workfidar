@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<include
+            android:id="@+id/navigation"
+            layout="@layout/element_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />-->
+
+        <LinearLayout
+            android:id="@+id/menuAcceuilLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--Mettre Code Menu Acceuil ICI-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F3F2EE"
+                tools:context=".MainActivity">
+                <!--android:background="@drawable/ne"-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp">
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/partie"
+                            />
+
+                    </RelativeLayout>
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnOrderPreserved="false"
+                        android:alignmentMode="alignMargins"
+                        android:rowCount="3"
+                        android:columnCount="2"
+                        >
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp"
+                            >
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:src="@drawable/employe"
+                                    android:layout_height="80dp"/>
+                                <!--android:src="@drawable/profile"-->
+
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:text="Employes"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/white"
+                                    android:textColor="#6f6f6f"
+                                    android:id="@+id/btnemployes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp"
+                            >
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:src="@drawable/calendar"
+                                    android:layout_height="80dp"/>
+                                <!--android:src="@drawable/calendar"-->
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnCalendrier"
+                                    android:text="Calendrier"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/white"
+                                    android:textColor="#6f6f6f"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardviewConge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp"
+                            >
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:src="@drawable/conge"
+                                    android:layout_height="80dp"/>
+                                <!--android:src="@drawable/luggage"-->
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btnconge"
+                                    android:text="congé"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/white"
+                                    android:textColor="#6f6f6f"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp"
+                            >
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:src="@drawable/pointage"
+                                    android:layout_height="80dp"/>
+                                <!--android:src="@drawable/focus"-->
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:text="pointage"
+                                    android:textSize="10sp"
+                                    android:id="@+id/pointage"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/white"
+                                    android:textColor="#6f6f6f"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp"
+                            >
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:src="@drawable/activitee"
+                                    android:layout_height="80dp"/>
+
+                                <!--android:src="@drawable/dices"-->
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:text="Activités"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/white"
+                                    android:textColor="#6f6f6f"
+                                   android:id="@+id/actii"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_margin="12dp"
+                            >
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:src="@drawable/blog"
+                                    android:layout_height="80dp"/>
+
+                                <!--android:src="@drawable/copywriting"-->
+
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:text="Blog"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="12dp"
+                                    android:background="@color/white"
+                                    android:textColor="#6f6f6f"
+android:id="@+id/slidee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/loginAcceuilLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLogin"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Se connecter"
+                android:background="@drawable/button"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonRegister"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="S'inscrire"
+                android:background="@drawable/button"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                />
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

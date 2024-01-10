@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WORK</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Test"><a href="https://www.facebook.com/">Test</a></string>
+
+    <!--Calendrier-->
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="vous_t_maintenat_un_employ">vous été maintenat un employé</string>
+
+
+</resources>

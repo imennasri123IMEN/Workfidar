@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">-->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <!--android:gravity="center"-->
+
+    <LinearLayout
+        android:id="@+id/show_text_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/show_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="Nom"
+            android:textColor="@color/purple_500"/>
+        <TextView
+            android:id="@+id/show_reason"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="Raison"
+            android:textColor="@color/purple_700"/>
+
+        <!--android:layout_toRightOf="@id/show_name"-->
+
+        <!--<LinearLayout
+            android:id="@+id/show_leaves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/show_reason"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/dateDeDébut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="19/04/2022"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:id="@+id/dateDeFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="20/04/2022"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>-->
+        <TextView
+            android:id="@+id/show_leaves"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="10"
+            android:textColor="@color/purple_700"/>
+
+        <!--android:layout_toRightOf="@+id/show_reason"-->
+
+
+        <TextView
+            android:id="@+id/statusConge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="En demande"
+            android:textColor="@color/purple_700"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/show_text_LinearLayout"
+        android:background="@drawable/ic_baseline_check_circle_24"
+        android:visibility="visible" />
+        <Button
+            android:id="@+id/reject"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/accept"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/ic_baseline_clear_24"
+            android:visibility="visible"/>
+
+        <!--<Button
+            android:id="@+id/detail"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/reject"
+            android:background="@drawable/ic_baseline_more_vert_24"/>-->
+    </RelativeLayout>
+
+
+<!--
+</androidx.constraintlayout.widget.ConstraintLayout>-->
